@@ -26,7 +26,7 @@ export default function Cover({ onOpen }: CoverProps) {
         <motion.img
           src="/photo.jpeg"
           alt="Foto"
-          className="w-90 h-130 object-cover rounded-full border-2 border-white"
+          className="w-80 h-90 object-cover rounded-full border-2 border-white"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -44,12 +44,12 @@ export default function Cover({ onOpen }: CoverProps) {
 
         {/* Animasi "Denandra & Bella" */}
         <motion.h1
-          className={`${greatVibes.className} text-6xl text-stone-600`}
+          className={`${greatVibes.className} text-center text-6xl text-stone-600 break-words md:break-normal md:text-6xl`}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
         >
-          Denandra & Bella
+          Denandra <br /> & <br/>Bella
         </motion.h1>
 
         {/* Animasi tanggal */}
