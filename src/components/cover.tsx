@@ -26,7 +26,7 @@ export default function Cover({ onOpen }: CoverProps) {
         <motion.img
           src="/photo.jpeg"
           alt="Foto"
-          className="w-80 h-90 object-cover rounded-full border-2 border-white"
+          className="w-50 h-70 object-cover rounded-full border-1 border-white"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -34,17 +34,17 @@ export default function Cover({ onOpen }: CoverProps) {
 
         {/* Animasi "The wedding of" */}
         <motion.p
-          className={`${playfairDisplay.className} text-center text-lg font-semibold text-[#4B5563]`}
+          className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563]`}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          The wedding of
+          The Wedding Of
         </motion.p>
 
         {/* Animasi "Denandra & Bella" */}
         <motion.h1
-          className={`${greatVibes.className} text-center text-6xl text-stone-600 break-words md:break-normal md:text-6xl`}
+          className={`${greatVibes.className} text-center text-5xl text-stone-600 break-words md:break-normal md:text-6xl`}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
@@ -65,12 +65,12 @@ export default function Cover({ onOpen }: CoverProps) {
         {/* Animasi tombol "Buka Undangan" dengan efek lebih dinamis */}
         <motion.button
           onClick={onOpen}
-          className={`${playfairDisplay.className} flex items-center gap-2 bg-[#7FBF7F] mt-7 hover:bg-[#6BAA6B] text-white font-bold py-3 px-6 rounded-full`}
+          className={`${playfairDisplay.className} flex items-center gap-2 bg-[#7FBF7F] hover:bg-[#6BAA6B] text-white font-bold py-2 px-4 text-base rounded-full`}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.9 }}
         >
-          <FiBookOpen className="text-xl" />
+          <FiBookOpen className="text-m" />
           Buka Undangan
         </motion.button>
       </div>
