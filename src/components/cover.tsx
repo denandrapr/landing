@@ -20,61 +20,114 @@ const playfairDisplay = Playfair_Display({
 
 export default function Cover({ onOpen }: CoverProps) {
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/50 bg-cover bg-center" style={{ backgroundImage: 'url("/background.png")' }}>
-      <div className="flex flex-col items-center space-y-4 bg-white/50 backdrop-blur p-6 rounded-xl w-[80%] sm:w-[500px]">
-        {/* Animasi foto */}
+    <div className="fixed inset-0 z-50 flex flex-col bg-black/50 bg-cover bg-center" style={{ backgroundImage: 'url("/background.jpg")' }}>
+      {/* Animasi "The wedding of" */}
+      <motion.p
+        className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563] mt-42 z-60`}
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+      >
+        The Wedding Of
+      </motion.p>
+
+      {/* Animasi "Denandra & Bella" */}
+      <motion.h1
+        className={`${greatVibes.className} text-center text-5xl text-stone-600 break-words md:break-normal mt-4 md:text-6xl z-60`}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
+      >
+        Denandra & Bella
+      </motion.h1>
+
+      {/* Animasi tanggal */}
+      <motion.p
+        className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563] mt-4 z-60`}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
+      >
+        20 . 09 . 2025
+      </motion.p>
+
+      {/* Gambar bunga di berbagai posisi */}
+      <motion.img
+        src="/img/ltflower.png"
+        alt="Bunga"
+        className="absolute top-0 left-0 w-[200px] h-[200px] object-cover z-30"
+        initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
+        animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+      />
+      <motion.img
+        src="/img/rtflower.png"
+        alt="Bunga"
+        className="absolute top-0 right-0 w-[200px] h-[200px] object-cover z-30"
+        initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
+        animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+      />
+      <motion.img
+        src="/img/lmflower.png"
+        alt="Bunga"
+        className="absolute top-[30vh] left-0 w-[200px] h-[400px]"
+        initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
+        animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+      />
+      <motion.img
+        src="/img/rmflower.png"
+        alt="Bunga"
+        className="absolute top-[30vh] right-0 w-[200px] h-[400px]"
+        initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
+        animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+      />
+      <motion.img
+        src="/img/blflower.png"
+        alt="Bunga"
+        className="absolute bottom-0 left-0 w-[200px] h-[200px] object-cover z-60"
+        initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
+        animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+      />
+      <motion.img
+        src="/img/brflower.png"
+        alt="Bunga"
+        className="absolute bottom-0 right-0 w-[200px] h-[200px] object-cover z-60"
+        initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
+        animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+      />
+
+      {/* Kontainer untuk tombol dan gambar */}
+      <div className="relative flex-grow flex flex-col justify-end">
+        {/* Animasi foto sticky di bawah, align center horizontal */}
         <motion.img
-          src="/photo.jpeg"
+          src="/bellaadra.png"
           alt="Foto"
-          className="w-50 h-70 object-cover rounded-full border-1 border-white"
+          className="w-80 h-110 object-cover sticky bottom-0 mx-auto z-40"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         />
 
-        {/* Animasi "The wedding of" */}
-        <motion.p
-          className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563]`}
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
-        >
-          The Wedding Of
-        </motion.p>
-
-        {/* Animasi "Denandra & Bella" */}
-        <motion.h1
-          className={`${greatVibes.className} text-center text-5xl text-stone-600 break-words md:break-normal md:text-6xl`}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-        >
-          Denandra <br /> & <br/>Bella
-        </motion.h1>
-
-        {/* Animasi tanggal */}
-        <motion.p
-          className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563]`}
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
-        >
-          20 . 09 . 2025
-        </motion.p>
-
-        {/* Animasi tombol "Buka Undangan" dengan efek lebih dinamis */}
-        <motion.button
-          onClick={onOpen}
-          className={`${playfairDisplay.className} flex items-center gap-2 bg-[#7FBF7F] hover:bg-[#6BAA6B] text-white font-bold py-2 px-4 text-base rounded-full`}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.9 }}
-        >
-          <FiBookOpen className="text-m" />
-          Buka Undangan
-        </motion.button>
+        {/* Kontainer tombol yang menggunakan flex untuk center */}
+        <div className="absolute bottom-[110px] left-0 right-0 flex justify-center z-60">
+          {/* Animasi tombol "Buka Undangan" */}
+          <motion.button
+            onClick={onOpen}
+            className={`${playfairDisplay.className} flex items-center gap-2 bg-[#465F4B] text-white font-bold py-2 px-4 text-base rounded-full`}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.9 }}
+          >
+            <FiBookOpen className="text-m" />
+            Buka Undangan
+          </motion.button>
+        </div>
       </div>
-      {/* <Countdown targetDate="2025-09-20T00:00:00" /> */}
     </div>
   );
 }

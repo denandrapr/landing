@@ -27,14 +27,24 @@ export default function WeddingPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          We are Getting Married
+          Assalamualaikum Wr. Wb.
         </motion.p>
+
+        <motion.p
+          className={`${playfairDisplay.className} text-center text-xl font-reguler text-[#4B5563]`}
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
+          Dengan Memohon Rahmat Dan Ridho Allah Subhanahu Wa Ta'ala. Kami Mengundang Bapak/Ibu/Saudara/I, Untuk Menghadiri Resepsi Pernikahan Kami.
+        </motion.p>
+
         {/* Konten */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-12">
           {/* Mempelai Pria */}
           <div className="relative text-center">
             <motion.div
-              className="w-78 h-78 rounded-full relative mx-auto"
+              className="w-90 h-90 rounded-full relative mx-auto"
               style={{ backgroundImage: 'url("/bgphoto.png")', backgroundSize: 'cover' }}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -44,15 +54,15 @@ export default function WeddingPage() {
               <motion.img
                 src="/adra.jpeg"
                 alt="Mempelai Pria"
-                className="w-52 h-52 rounded-full object-cover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                className="w-64 h-64 rounded-full object-cover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               />
             </motion.div>
-            <h3 className={`${playfairDisplay.className} text-2xl font-semibold mt-2`}>Denandra Prasetya Laksma Putra S.Kom</h3>
+            <h3 className={`${playfairDisplay.className} text-2xl font-semibold mt-2`}>Denandra Prasetya Laksma Putra</h3>
             <p className={`${playfairDisplay.className} text-sm mt-2`}>
-              Putra dari Bapak Rizki Mahendra & Yogi Laksmi Devi
+              Putra dari Bapak Rizki Mahendra & Ibu C. Yogi Laksmi Devi
             </p>
           </div>
 
@@ -70,7 +80,7 @@ export default function WeddingPage() {
           {/* Mempelai Wanita */}
           <div className="text-center">
             <motion.div
-              className="w-78 h-78 rounded-full relative mx-auto"
+              className="w-90 h-90 rounded-full relative mx-auto"
               style={{ backgroundImage: 'url("/bgphoto.png")', backgroundSize: 'cover' }}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -80,13 +90,13 @@ export default function WeddingPage() {
               <motion.img
                 src="/bella.jpeg"
                 alt="Mempelai Wanita"
-                className="w-52 h-52 rounded-full object-cover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                className="w-64 h-64 rounded-full object-cover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               />
             </motion.div>
-            <h3 className={`${playfairDisplay.className} text-2xl font-semibold mt-2`}>Bella Ramadhanty Maruf S.Kom</h3>
+            <h3 className={`${playfairDisplay.className} text-2xl font-semibold mt-2`}>Bella Ramadhanty Maruf</h3>
             <p className={`${playfairDisplay.className} text-sm mt-2`}>
               Putri dari Bapak Ali Maruf & Ibu Susiati
             </p>
