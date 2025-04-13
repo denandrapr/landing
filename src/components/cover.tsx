@@ -20,7 +20,7 @@ const playfairDisplay = Playfair_Display({
 
 export default function Cover({ onOpen }: CoverProps) {
   return (
-    <div className="fixed inset-0 z-50 flex flex-col bg-black/50 bg-cover bg-center" style={{ backgroundImage: 'url("/background.jpg")' }}>
+    <div className="fixed inset-0 z-50 flex flex-col bg-black/50 bg-cover bg-center overflow-hidden min-h-screen" style={{ backgroundImage: 'url("/bg.jpg")' }}>
       {/* Animasi "The wedding of" */}
       <motion.p
         className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563] mt-42 z-60`}
@@ -33,7 +33,7 @@ export default function Cover({ onOpen }: CoverProps) {
 
       {/* Animasi "Denandra & Bella" */}
       <motion.h1
-        className={`${greatVibes.className} text-center text-5xl text-stone-600 break-words md:break-normal mt-4 md:text-6xl z-60`}
+        className={`${greatVibes.className} text-center text-4xl text-stone-600 break-words md:break-normal mt-4 md:text-6xl z-60`}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}

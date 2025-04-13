@@ -14,24 +14,74 @@ const greatVibes = Great_Vibes({
 
 export default function WeddingPage() {
   return (
-    <div className="bg-[#e6f5ec] text-green-800">
+    <div className="bg-[#e6f5ec]">
       {/* Section 1: Mempelai */}
-      <section className="flex flex-col items-center justify-center py-16 px-6 relative">
+      <section className="flex flex-col items-center justify-center py-16 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/bg.jpg")' }}>
         {/* Ornamen */}
         <div className="absolute top-0 left-0 w-24 h-24 bg-green-100 rounded-full opacity-30 blur-2xl"></div>
         <div className="absolute bottom-0 right-0 w-24 h-24 bg-green-100 rounded-full opacity-30 blur-2xl"></div>
+        <motion.img
+          src="/img/lmflower.png"
+          alt="Bunga"
+          className="absolute top-[5vh] left-[-50] w-[200px] h-[400px]"
+          initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
+          animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        />
+        <motion.img
+          src="/img/rmflower.png"
+          alt="Bunga"
+          className="absolute top-[5vh] right-[-50] w-[200px] h-[400px]"
+          initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
+          animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        />
+
+        <motion.img
+          src="/img/lmflower.png"
+          alt="Bunga"
+          className="absolute top-[30vh] left-[-30] w-[200px] h-[450px]"
+          initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
+          animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        />
+        <motion.img
+          src="/img/rmflower.png"
+          alt="Bunga"
+          className="absolute top-[30vh] right-[-30] w-[200px] h-[450px]"
+          initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
+          animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        />
+
+        <motion.img
+          src="/img/blflower.png"
+          alt="Bunga"
+          className="absolute bottom-0 left-0 w-[250px] h-[300px] object-cover z-60"
+          initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
+          animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        />
+        <motion.img
+          src="/img/brflower.png"
+          alt="Bunga"
+          className="absolute bottom-0 right-0 w-[250px] h-[300px] object-cover z-60"
+          initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
+          animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        />
 
         <motion.p
-          className={`${playfairDisplay.className} text-center text-3xl font-semibold text-[#4B5563]`}
+          className={`${playfairDisplay.className} text-center text-2xl font-semibold text-[#5C3B33]`}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          Assalamualaikum Wr. Wb.
+          ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
         </motion.p>
 
         <motion.p
-          className={`${playfairDisplay.className} text-center text-xl font-reguler text-[#4B5563]`}
+          className={`${playfairDisplay.className} text-center text-l font-reguler mt-8 text-[#5C3B33]`}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -43,33 +93,25 @@ export default function WeddingPage() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-12">
           {/* Mempelai Pria */}
           <div className="relative text-center">
-            <motion.div
-              className="w-90 h-90 rounded-full relative mx-auto"
-              style={{ backgroundImage: 'url("/bgphoto.png")', backgroundSize: 'cover' }}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+            {/* Gambar mempelai */}
+            <motion.img
+              src="/adraa.png"
+              alt="Mempelai Pria"
+              className="w-42 h-42 rounded-full object-cover relative mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-            >
-              {/* Gambar mempelai */}
-              <motion.img
-                src="/adra.jpeg"
-                alt="Mempelai Pria"
-                className="w-64 h-64 rounded-full object-cover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              />
-            </motion.div>
-            <h3 className={`${playfairDisplay.className} text-2xl font-semibold mt-2`}>Denandra Prasetya Laksma Putra</h3>
-            <p className={`${playfairDisplay.className} text-sm mt-2`}>
-              Putra dari Bapak Rizki Mahendra & Ibu C. Yogi Laksmi Devi
+            />
+            <h3 className={`${greatVibes.className} text-2xl font-bold mt-2 text-[#5C3B33]`}>Denandra Prasetya Laksma Putra</h3>
+            <p className={`${playfairDisplay.className} text-sm mt-2 text-[#5C3B33]`}>
+              Putra dari Bapak Rizki Mahendra <br />&<br />Ibu C. Yogi Laksmi Devi
             </p>
           </div>
 
 
           {/* & */}
           <motion.div
-            className={`${greatVibes.className} text-9xl font-bold text-green-600`}
+            className={`${greatVibes.className} text-4xl font-bold text-[#5C3B33]`}
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -79,26 +121,18 @@ export default function WeddingPage() {
 
           {/* Mempelai Wanita */}
           <div className="text-center">
-            <motion.div
-              className="w-90 h-90 rounded-full relative mx-auto"
-              style={{ backgroundImage: 'url("/bgphoto.png")', backgroundSize: 'cover' }}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+            {/* Gambar mempelai */}
+            <motion.img
+              src="/bellaa.png"
+              alt="Mempelai Wanita"
+              className="w-42 h-42 rounded-full object-cover relative mx-auto"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-            >
-              {/* Gambar mempelai */}
-              <motion.img
-                src="/bella.jpeg"
-                alt="Mempelai Wanita"
-                className="w-64 h-64 rounded-full object-cover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              />
-            </motion.div>
-            <h3 className={`${playfairDisplay.className} text-2xl font-semibold mt-2`}>Bella Ramadhanty Maruf</h3>
-            <p className={`${playfairDisplay.className} text-sm mt-2`}>
-              Putri dari Bapak Ali Maruf & Ibu Susiati
+            />
+            <h3 className={`${greatVibes.className} text-xl font-semibold mt-2 text-[#5C3B33]`}>Bella Ramadhanty Maruf</h3>
+            <p className={`${playfairDisplay.className} text-sm mt-2 text-[#5C3B33]`}>
+              Putri dari Bapak Ali Maruf <br />& <br />Ibu Susiati
             </p>
           </div>
         </div>
