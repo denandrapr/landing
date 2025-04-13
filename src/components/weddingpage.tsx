@@ -36,7 +36,7 @@ export default function WeddingPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          Dengan Memohon Rahmat Dan Ridho Allah Subhanahu Wa Ta'ala. Kami Mengundang Bapak/Ibu/Saudara/I, Untuk Menghadiri Resepsi Pernikahan Kami.
+          Dengan Memohon Rahmat Dan Ridho Allah Subhanahu Wa Ta&apos;ala. Kami Mengundang Bapak/Ibu/Saudara/I, Untuk Menghadiri Resepsi Pernikahan Kami.
         </motion.p>
 
         {/* Konten */}
