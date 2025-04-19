@@ -19,7 +19,7 @@ const Location: React.FC = () => {
     };
 
     return (
-        <section className="flex flex-col items-center justify-center py-14 px-6 bg-[#465F4B] relative">
+        <section className="flex flex-col items-center justify-center py-14 px-6 bg-[#465F4B] overflow-hidden relative">
             <motion.img
                 src="/img/lmflower.png"
                 alt="Bunga"

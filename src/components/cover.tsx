@@ -55,7 +55,7 @@ export default function Cover({ onOpen }: CoverProps) {
       <motion.img
         src="/img/ltflower.png"
         alt="Bunga"
-        className="absolute top-0 left-0 w-[200px] h-[200px] object-cover z-30"
+        className="absolute top-0 left-[-20] w-[200px] h-[200px] object-cover z-30"
         initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
         animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
         transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -63,7 +63,7 @@ export default function Cover({ onOpen }: CoverProps) {
       <motion.img
         src="/img/rtflower.png"
         alt="Bunga"
-        className="absolute top-0 right-0 w-[200px] h-[200px] object-cover z-30"
+        className="absolute top-0 right-[-20] w-[200px] h-[200px] object-cover z-30"
         initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
         animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
         transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -107,7 +107,7 @@ export default function Cover({ onOpen }: CoverProps) {
         <motion.img
           src="/bellaadra.png"
           alt="Foto"
-          className="w-80 h-110 object-cover sticky bottom-0 mx-auto z-40"
+          className="w-70 h-100 object-cover sticky bottom-0 mx-auto z-40"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
