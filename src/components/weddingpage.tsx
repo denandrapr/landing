@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { Great_Vibes, Playfair_Display } from 'next/font/google';
 import Mempelai from "./mempelai";
 import CountingSection from "./counting";
 import Location from "./location";

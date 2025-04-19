@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Great_Vibes, Playfair_Display } from 'next/font/google';
+import { Playfair_Display } from 'next/font/google';
 
 interface CountdownProps {
   targetDate: string;
