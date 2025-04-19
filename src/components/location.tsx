@@ -55,7 +55,7 @@ const Location: React.FC = () => {
             <motion.img
                 src="/img/blflower.png"
                 alt="Bunga"
-                className="absolute bottom-0 left-[-50] w-[250px] h-[300px] object-cover z-60"
+                className="absolute bottom-0 left-[-50] w-[250px] h-[300px] object-cover z-40"
                 initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
                 animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
                 transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -63,7 +63,7 @@ const Location: React.FC = () => {
             <motion.img
                 src="/img/brflower.png"
                 alt="Bunga"
-                className="absolute bottom-0 right-[-50] w-[250px] h-[300px] object-cover z-60"
+                className="absolute bottom-0 right-[-50] w-[250px] h-[300px] object-cover z-40"
                 initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
                 animate={{ opacity: 1, x: 0 }}   // masuk ke posisi normal
                 transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -135,7 +135,7 @@ const Location: React.FC = () => {
 
                 {/* Map iframe */}
                 <motion.div
-                    className="w-full mt-8"
+                    className="w-full mt-8 z-60"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
@@ -145,7 +145,7 @@ const Location: React.FC = () => {
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0706208593206!2d112.7348571!3d-7.345966899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb4b0d8c2dff%3A0xb0e6098509d44856!2sGedung%20Graha%20Wisata!5e0!3m2!1sen!2sid!4v1745086170180!5m2!1sen!2sid"
                         width="100%"
                         height="300"
-                        style={{ border: 0 }}
+                        style={{ border: 0}}
                         allowFullScreen={false}
                         loading="lazy"
                     ></iframe>
@@ -154,7 +154,7 @@ const Location: React.FC = () => {
                 {/* Button Google Maps */}
                 <motion.button
                     onClick={openGoogleMaps}
-                    className={`${playfairDisplay.className} flex items-center gap-2 bg-white text-[#465F4B] font-bold py-3 px-4 mt-4 text-base rounded-full`}
+                    className={`${playfairDisplay.className} flex items-center gap-2 bg-white text-[#465F4B] font-bold py-3 px-4 mt-4 text-base rounded-full z-60`}
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, ease: 'easeOut', delay: 0.8 }}
