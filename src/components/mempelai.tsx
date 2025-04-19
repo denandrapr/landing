@@ -142,7 +142,7 @@ const Mempelai: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             />
-            <h3 className={`${greatVibes.className} text-xl font-semibold mt-2 text-[#5C3B33]`}>Denandra Prasetya Laksma Putra</h3>
+            <h3 className={`${greatVibes.className} text-2xl font-semibold mt-2 text-[#5C3B33]`}>Denandra Prasetya Laksma Putra</h3>
             <p className={`${playfairDisplay.className} text-l mt-2 text-[#5C3B33]`}>
               Putra dari Bapak Rizki Mahendra <br />&<br />Ibu C. Yogi Laksmi Devi
             </p>
