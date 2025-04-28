@@ -34,7 +34,7 @@ export default function BackgroundMusic({ isPlaying }: BackgroundMusicProps) {
 
   return (
     <>
-      <audio ref={audioRef} loop src="/music.mp3" />
+      <audio ref={audioRef} loop src="/ook.mp3" />
       <button
         onClick={toggleMute}
         className="fixed bottom-4 right-4 z-50 bg-white p-2 rounded-full shadow-lg hover:scale-110 transition"
