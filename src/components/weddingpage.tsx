@@ -5,6 +5,7 @@ import ImageGallery from "./imagegallery";
 import Footer from "./footer";
 import supabase from "@/config/supabaseclient";
 import Rsvp from "./rsvp";
+import Gift from "./gift";
 
 export default function WeddingPage() {
   console.log("Supabase Client:", supabase);
@@ -22,8 +23,11 @@ export default function WeddingPage() {
       {/* Section 4: Gallery */}
       <ImageGallery />
 
-      {/* Section 4: Gallery */}
+      {/* Section 5: Rsvp */}
       <Rsvp />
+
+      {/* Section 5: Rsvp */}
+      <Gift />
 
       {/* Section 5: Footer */}
       <Footer />

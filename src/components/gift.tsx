@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Great_Vibes, Playfair_Display } from 'next/font/google';
-import Image from 'next/image'
+import Image from 'next/image';
+import { Copy } from "lucide-react";
 
 const playfairDisplay = Playfair_Display({
     subsets: ['latin'],
-    weight: ['400', '700'], // Menambahkan berat font jika dibutuhkan
+    weight: ['400', '700'],
 });
 
 const greatVibes = Great_Vibes({
@@ -13,22 +14,26 @@ const greatVibes = Great_Vibes({
     weight: ['400'],
 });
 
-const images = [
-    "/gallery/img1.jpg",
-    "/gallery/img2.jpg",
-    "/gallery/img3.jpeg",
-    "/gallery/img4.png",
-    "/gallery/img5.JPG",
-    "/gallery/img6.jpeg",
-    "/gallery/img7.jpeg",
-    "/gallery/img8.jpeg",
-];
+const copyToClipboard = (text: string) => {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";  // Hindari scroll
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    try {
+        document.execCommand("copy");
+        alert("Nomor rekening disalin!");
+    } catch (err) {
+        alert("Gagal menyalin");
+    }
+    document.body.removeChild(textarea);
+};
 
-export default function ImageGallery() {
-    const [selectedImage, setSelectedImage] = useState(images[0]);
-
+export default function Gift() {
     return (
-        <section className="flex flex-col items-center justify-center pt-16 pb-24 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/bg.jpg")' }}>
+        <section className="flex flex-col items-center justify-center pt-16 pb-16 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/bg.jpg")' }}>
             {/* Ornamen */}
             <motion.img
                 src="/img/lmflower.png"
@@ -80,62 +85,57 @@ export default function ImageGallery() {
             />
 
             <motion.p
-                className={`${greatVibes.className} text-center text-5xl mb-4 font-semibold text-[#5C3B33]`}
+                className={`${greatVibes.className} text-center text-3xl mb-12 font-semibold text-[#5C3B33]`}
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-                Galeri Cinta Kita
+                Support Cinta Kami di Sini ✨
             </motion.p>
 
-            <motion.p
-                className={`${playfairDisplay.className} text-center text-xs mb-12 font-semibold text-[#5C3B33] px-12`}
-                initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-            >
-                Bukan cuma foto, ini jejak cerita kita yang nggak bisa dilupain 💫
-            </motion.p>
-
-            {/* Gambar utama */}
-            <div className="w-full max-w-md h-100 rounded-xl overflow-hidden shadow-lg mb-4 z-90">
-                <img
-                    src={selectedImage}
-                    alt="Selected"
-                    className="w-full h-full object-cover transition-all duration-300"
+            {/* Section informasi bank BCA*/}
+            <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-md mb-4 flex items-center gap-4 z-90">
+                <Image
+                    src="/bca.png"
+                    alt="Logo Bank BCA"
+                    width={50}
+                    height={50}
                 />
+                <div className="flex-1">
+                    <p className="text-gray-800 font-semibold">BCA</p>
+                    <p className="text-gray-600 text-sm">a.n Bella Ramadhanty Maruf</p>
+                </div>
+                <button
+                    onClick={() => copyToClipboard("1234567890")}
+                    className="text-[#465F4B] hover:text-green-700 transition"
+                    type="button"
+                >
+                    <Copy size={20} />
+                </button>
             </div>
 
-            {/* Thumbnails */}
-            <div className="grid grid-cols-4 md:grid-cols-8 gap-2 w-full max-w-md z-90">
-                {images.map((img, idx) => (
-                    <Image
-                        key={idx}
-                        src={img}
-                        alt={`Thumbnail ${idx}`}
-                        width={300} // sesuaikan dengan kebutuhan kamu
-                        height={300}
-                        className={`w-full aspect-square rounded-lg cursor-pointer object-cover border-2 ${selectedImage === img ? "border-[#465F4B]" : "border-transparent"
-                            }`}
-                        onClick={() => setSelectedImage(img)}
-                        loading="lazy"
-                    />
-                ))}
+            {/* Section informasi bank BCA*/}
+            <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-md mb-8 flex items-center gap-4 z-90">
+                <Image
+                    src="/blu.jpg"
+                    alt="Logo Bank BCA"
+                    width={50}
+                    height={50}
+                />
+                <div className="flex-1">
+                    <p className="text-gray-800 font-semibold">Blu by BCA Digital</p>
+                    <p className="text-gray-600 text-sm">a.n Bella Ramadhanty Maruf</p>
+                </div>
+                <button
+                    onClick={() => copyToClipboard("1234567890")}
+                    className="text-[#465F4B] hover:text-green-700 transition"
+                    type="button"
+                >
+                    <Copy size={20} />
+                </button>
             </div>
 
-            {/* Video YouTube */}
-            <div className="w-full max-w-md mt-8 z-90">
-                <iframe
-                    width="100%"
-                    height="200"
-                    src="https://www.youtube.com/embed/IuQz_b-LCmc"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="rounded-lg"
-                ></iframe>
-            </div>
+
         </section>
     );
 }

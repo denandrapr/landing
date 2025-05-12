@@ -99,12 +99,21 @@ export default function Rsvp() {
             />
 
             <motion.p
-                className={`${greatVibes.className} text-center text-5xl mb-12 font-semibold text-white]`}
+                className={`${greatVibes.className} text-center text-5xl mb-4 font-semibold text-white]`}
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
                 Kartu Ucapan
+            </motion.p>
+
+            <motion.p
+                className={`${playfairDisplay.className} text-center text-xs mb-12 font-semibold text-white px-12`}
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+            >
+                Kirimkan semangat dan kebahagiaan lewat kartu ucapan ini, yuk! 🥳
             </motion.p>
 
             {/* Form ucapan */}
