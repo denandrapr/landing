@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { Great_Vibes, Playfair_Display } from 'next/font/google';
-import { FiMap } from 'react-icons/fi'; // icon lokasi
+import { FiMap } from 'react-icons/fi';
 
 const playfairDisplay = Playfair_Display({
     subsets: ['latin'],

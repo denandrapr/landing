@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Great_Vibes, Playfair_Display } from 'next/font/google';
+import Image from 'next/image'
 
 const playfairDisplay = Playfair_Display({
     subsets: ['latin'],
@@ -17,6 +18,10 @@ const images = [
     "/gallery/img2.jpg",
     "/gallery/img3.jpeg",
     "/gallery/img4.png",
+    "/gallery/img5.JPG",
+    "/gallery/img6.jpeg",
+    "/gallery/img7.jpeg",
+    "/gallery/img8.jpeg",
 ];
 
 export default function ImageGallery() {
@@ -94,15 +99,32 @@ export default function ImageGallery() {
             {/* Thumbnails */}
             <div className="grid grid-cols-4 md:grid-cols-8 gap-2 w-full max-w-md z-90">
                 {images.map((img, idx) => (
-                    <img
+                    <Image
                         key={idx}
                         src={img}
                         alt={`Thumbnail ${idx}`}
+                        width={300} // sesuaikan dengan kebutuhan kamu
+                        height={300}
                         className={`w-full aspect-square rounded-lg cursor-pointer object-cover border-2 ${selectedImage === img ? "border-[#465F4B]" : "border-transparent"
                             }`}
                         onClick={() => setSelectedImage(img)}
+                        loading="lazy"
                     />
                 ))}
+            </div>
+
+            {/* Video YouTube */}
+            <div className="w-full max-w-md mt-8 z-90">
+                <iframe
+                    width="100%"
+                    height="200"
+                    src="https://www.youtube.com/embed/IuQz_b-LCmc"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="rounded-lg"
+                ></iframe>
             </div>
         </section>
     );

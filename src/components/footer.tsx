@@ -1,61 +1,72 @@
-<footer className="bg-[#465F4B] text-white py-10">
-  <div className="max-w-4xl mx-auto text-center space-y-8">
-    
-    {/* Nama Pengantin dan Sosial Media */}
-    <div className="flex flex-col md:flex-row justify-center items-center gap-12">
-      {/* Denandra */}
-      <div>
-        <p className="text-lg font-semibold">Denandra</p>
-        <div className="flex flex-col items-center space-y-1 text-sm mt-1">
-          <a
-            href="https://instagram.com/denandra"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline hover:text-[#A3D9A5]"
-          >
-            Instagram
-          </a>
-          <a
-            href="https://linkedin.com/in/denandra"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline hover:text-[#A3D9A5]"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </div>
+import React from 'react';
+import { FiInstagram, FiLinkedin } from 'react-icons/fi';
 
-      {/* Bella */}
-      <div>
-        <p className="text-lg font-semibold">Bella</p>
-        <div className="flex flex-col items-center space-y-1 text-sm mt-1">
-          <a
-            href="https://instagram.com/bella"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline hover:text-[#A3D9A5]"
-          >
-            Instagram
-          </a>
-          <a
-            href="https://linkedin.com/in/bella"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline hover:text-[#A3D9A5]"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </div>
+const Footer: React.FC = () => {
+    return (
+        <footer className="bg-[#465F4B] text-white py-12 px-4">
+            <div className="max-w-4xl mx-auto space-y-10">
 
-    {/* Info Lagu */}
-    <div className="text-sm text-gray-200">
-      Backsound: <span className="italic">"Everything I Do"</span> — Bryan Adams
-    </div>
+                {/* Nama Pengantin dan Sosial Media */}
+                <div className="flex flex-row justify-center items-start gap-6 text-center">
 
-    {/* Copyright */}
-    <p className="text-xs text-gray-300">&copy; 2025 Denandra & Bella. All rights reserved.</p>
-  </div>
-</footer>
+                    {/* Bella */}
+                    <div className="space-y-2">
+                        <p className="text-lg font-semibold">Bella Ramadhanty</p>
+                        <div className="flex justify-center gap-4 text-xl text-gray-200">
+                            <a
+                                href="https://instagram.com/bellabel12"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-[#A3D9A5] transition-colors"
+                            >
+                                <FiInstagram />
+                            </a>
+                            <a
+                                href="https://linkedin.com/in/bellaramadhanty/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-[#A3D9A5] transition-colors"
+                            >
+                                <FiLinkedin />
+                            </a>
+                        </div>
+                    </div>
+                    {/* Denandra */}
+                    <div className="space-y-2">
+                        <p className="text-lg font-semibold">Denandra Prasetya</p>
+                        <div className="flex justify-center gap-4 text-xl text-gray-200">
+                            <a
+                                href="https://instagram.com/denandrapr"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-[#A3D9A5] transition-colors"
+                            >
+                                <FiInstagram />
+                            </a>
+                            <a
+                                href="https://linkedin.com/in/denandra-prasetya/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-[#A3D9A5] transition-colors"
+                            >
+                                <FiLinkedin />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Info Lagu */}
+                <div className="text-sm text-gray-200 text-center">
+                    Backsound by Shania Twain – <span className="italic">"You're Still The One"</span>
+                </div>
+            </div>
+            {/* Copyright */}
+            <div className="mt-4 space-y-1 text-center">
+                <div className="text-xs text-gray-300">&copy; 2025 Denandra & Bella. All rights reserved.</div>
+                <div className="text-xs text-gray-300">Dibikin dengan ❤️ pake Next.js, biar kece!</div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
