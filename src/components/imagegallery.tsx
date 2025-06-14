@@ -22,10 +22,10 @@ const images = [
     "/gallery/photo6.webp",
     "/gallery/photo7.webp",
     "/gallery/photo8.webp",
-    "/gallery/photo9.webp",
     "/gallery/photo10.webp",
-    "/gallery/photo11.webp",
+    "/gallery/photo9.webp",
     "/gallery/photo12.webp",
+    "/gallery/photo11.webp",
 ];
 
 export default function ImageGallery() {
