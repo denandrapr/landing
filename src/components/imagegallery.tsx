@@ -14,14 +14,14 @@ const greatVibes = Great_Vibes({
 });
 
 const images = [
-    "/gallery/img1.jpg",
-    "/gallery/img2.jpg",
-    "/gallery/img3.jpg",
-    "/gallery/img4.jpg",
-    "/gallery/img5.jpg",
-    "/gallery/img6.jpg",
-    "/gallery/img7.jpg",
-    "/gallery/img8.jpg",
+    "/gallery/photo1.jpg",
+    "/gallery/photo2.jpg",
+    "/gallery/photo3.jpg",
+    "/gallery/photo4.jpg",
+    "/gallery/photo5.jpg",
+    "/gallery/photo6.jpg",
+    "/gallery/photo7.jpg",
+    "/gallery/photo8.jpg",
 ];
 
 export default function ImageGallery() {
