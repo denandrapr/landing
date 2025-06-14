@@ -20,8 +20,8 @@ const images = [
     "/gallery/img4.jpg",
     "/gallery/img5.jpg",
     "/gallery/img6.jpg",
-    "/gallery/img7.jpeg",
-    "/gallery/img8.jpeg",
+    "/gallery/img7.jpg",
+    "/gallery/img8.jpg",
 ];
 
 export default function ImageGallery() {
