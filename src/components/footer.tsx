@@ -5,7 +5,6 @@ const Footer: React.FC = () => {
     return (
         <footer className="bg-[#465F4B] text-white py-12 px-4">
             <div className="max-w-4xl mx-auto space-y-10">
-
                 {/* Nama Pengantin dan Sosial Media */}
                 <div className="flex flex-row justify-center items-start gap-6 text-center">
 

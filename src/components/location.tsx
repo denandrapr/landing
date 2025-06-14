@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { Great_Vibes, Playfair_Display } from 'next/font/google';
 import { FiMap } from 'react-icons/fi';
+import { useQRCode } from 'next-qrcode';
 
 const playfairDisplay = Playfair_Display({
     subsets: ['latin'],
@@ -17,6 +18,8 @@ const Location: React.FC = () => {
     const openGoogleMaps = () => {
         window.open('https://www.google.com/maps/search/?api=1&query=Gedung+Graha+Wisata+Jawa+Timur', '_blank');
     };
+
+    const { Canvas } = useQRCode();
 
     return (
         <section className="flex flex-col items-center justify-center py-14 px-6 bg-[#465F4B] overflow-hidden relative">
@@ -145,7 +148,7 @@ const Location: React.FC = () => {
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0706208593206!2d112.7348571!3d-7.345966899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb4b0d8c2dff%3A0xb0e6098509d44856!2sGedung%20Graha%20Wisata!5e0!3m2!1sen!2sid!4v1745086170180!5m2!1sen!2sid"
                         width="100%"
                         height="300"
-                        style={{ border: 0}}
+                        style={{ border: 0 }}
                         allowFullScreen={false}
                         loading="lazy"
                     ></iframe>
@@ -162,6 +165,25 @@ const Location: React.FC = () => {
                     <FiMap className="text-m" />
                     Buka di Google Maps
                 </motion.button>
+
+                {/* <div className="flex flex-col items-center justify-center h-full mt-8 text-center px">
+                    <p className={`${playfairDisplay.className} text-lg mt-1 mb-4`}>
+                        Jangan lupa <br />tunjukin QR ini ya saat hadir
+                    </p>
+                    <Canvas
+                        text={'https://github.com/bunlong/next-qrcode'}
+                        options={{
+                            errorCorrectionLevel: 'M',
+                            margin: 3,
+                            scale: 4,
+                            width: 200,
+                            color: {
+                                dark: '#000',
+                                light: '#FFF',
+                            },
+                        }}
+                    />
+                </div> */}
             </div>
         </section>
     );

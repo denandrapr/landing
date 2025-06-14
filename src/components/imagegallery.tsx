@@ -16,10 +16,10 @@ const greatVibes = Great_Vibes({
 const images = [
     "/gallery/img1.jpg",
     "/gallery/img2.jpg",
-    "/gallery/img3.jpeg",
-    "/gallery/img4.png",
-    "/gallery/img5.JPG",
-    "/gallery/img6.jpeg",
+    "/gallery/img3.jpg",
+    "/gallery/img4.jpg",
+    "/gallery/img5.jpg",
+    "/gallery/img6.jpg",
     "/gallery/img7.jpeg",
     "/gallery/img8.jpeg",
 ];
