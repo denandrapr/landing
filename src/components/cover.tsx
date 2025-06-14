@@ -23,7 +23,7 @@ export default function Cover({ onOpen }: CoverProps) {
     <div className="fixed inset-0 z-50 flex flex-col bg-black/50 bg-cover bg-center overflow-hidden min-h-screen" style={{ backgroundImage: 'url("/bg.jpg")' }}>
       {/* Animasi "The wedding of" */}
       <motion.p
-        className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563] mt-42 z-60`}
+        className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563] mt-32 z-60`}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -38,12 +38,12 @@ export default function Cover({ onOpen }: CoverProps) {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
       >
-        Denandra & Bella
+        Bella & Denandra
       </motion.h1>
 
       {/* Animasi tanggal */}
       <motion.p
-        className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563] mt-4 z-60`}
+        className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563] mt-2 z-60`}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}

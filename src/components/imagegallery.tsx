@@ -14,14 +14,18 @@ const greatVibes = Great_Vibes({
 });
 
 const images = [
-    "/gallery/photo1.jpg",
-    "/gallery/photo2.jpg",
-    "/gallery/photo3.jpg",
-    "/gallery/photo4.jpg",
-    "/gallery/photo5.jpg",
-    "/gallery/photo6.jpg",
-    "/gallery/photo7.jpg",
-    "/gallery/photo8.jpg",
+    "/gallery/photo1.webp",
+    "/gallery/photo2.webp",
+    "/gallery/photo3.webp",
+    "/gallery/photo4.webp",
+    "/gallery/photo5.webp",
+    "/gallery/photo6.webp",
+    "/gallery/photo7.webp",
+    "/gallery/photo8.webp",
+    "/gallery/photo9.webp",
+    "/gallery/photo10.webp",
+    "/gallery/photo11.webp",
+    "/gallery/photo12.webp",
 ];
 
 export default function ImageGallery() {
@@ -98,7 +102,7 @@ export default function ImageGallery() {
             </motion.p>
 
             {/* Gambar utama */}
-            <div className="w-full max-w-md h-100 rounded-xl overflow-hidden shadow-lg mb-4 z-90">
+            <div className="w-full max-w-md h-120 rounded-xl overflow-hidden shadow-lg mb-4 z-90">
                 <img
                     src={selectedImage}
                     alt="Selected"
