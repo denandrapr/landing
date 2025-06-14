@@ -33,10 +33,10 @@ const copyToClipboard = (text: string) => {
 
 export default function Gift() {
     return (
-        <section className="flex flex-col items-center justify-center pt-16 pb-16 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/bg.jpg")' }}>
+        <section className="flex flex-col items-center justify-center pt-16 pb-16 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/bg.webp")' }}>
             {/* Ornamen */}
             <motion.img
-                src="/img/lmflower.png"
+                src="/img/lmflower.webp"
                 alt="Bunga"
                 className="absolute top-[5vh] left-[-50] w-[200px] h-[400px]"
                 initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -44,7 +44,7 @@ export default function Gift() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             />
             <motion.img
-                src="/img/rmflower.png"
+                src="/img/rmflower.webp"
                 alt="Bunga"
                 className="absolute top-[5vh] right-[-50] w-[200px] h-[400px]"
                 initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -52,7 +52,7 @@ export default function Gift() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             />
             <motion.img
-                src="/img/lmflower.png"
+                src="/img/lmflower.webp"
                 alt="Bunga"
                 className="absolute top-[30vh] left-[-30] w-[200px] h-[450px]"
                 initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -60,7 +60,7 @@ export default function Gift() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             />
             <motion.img
-                src="/img/rmflower.png"
+                src="/img/rmflower.webp"
                 alt="Bunga"
                 className="absolute top-[30vh] right-[-30] w-[200px] h-[450px]"
                 initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -68,7 +68,7 @@ export default function Gift() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             />
             <motion.img
-                src="/img/blflower.png"
+                src="/img/blflower.webp"
                 alt="Bunga"
                 className="absolute bottom-0 left-0 w-[250px] h-[300px] object-cover z-60"
                 initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -76,7 +76,7 @@ export default function Gift() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             />
             <motion.img
-                src="/img/brflower.png"
+                src="/img/brflower.webp"
                 alt="Bunga"
                 className="absolute bottom-0 right-0 w-[250px] h-[300px] object-cover z-60"
                 initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -96,7 +96,7 @@ export default function Gift() {
             {/* Section informasi bank BCA*/}
             <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-md mb-4 flex items-center gap-4 z-90">
                 <Image
-                    src="/bca.png"
+                    src="/bca.webp"
                     alt="Logo Bank BCA"
                     width={50}
                     height={50}
@@ -117,7 +117,7 @@ export default function Gift() {
             {/* Section informasi bank BCA*/}
             <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-md mb-8 flex items-center gap-4 z-90">
                 <Image
-                    src="/blu.jpg"
+                    src="/blu.webp"
                     alt="Logo Bank BCA"
                     width={50}
                     height={50}

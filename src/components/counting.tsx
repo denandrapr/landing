@@ -31,7 +31,7 @@ const CountingSection: React.FC = () => {
     return (
         <section
             className="flex flex-col items-center justify-end px-6 overflow-hidden relative h-[300px] pb-12"
-            style={{ backgroundImage: 'linear-gradient(to top, rgba(0, 0, 0, 0.7) 20%, transparent 100%), url("/countdownbg.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            style={{ backgroundImage: 'linear-gradient(to top, rgba(0, 0, 0, 0.7) 20%, transparent 100%), url("/countdownbg.webp")', backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             {/* Tanggal */}
             <motion.p

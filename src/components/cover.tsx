@@ -20,7 +20,7 @@ const playfairDisplay = Playfair_Display({
 
 export default function Cover({ onOpen }: CoverProps) {
   return (
-    <div className="fixed inset-0 z-50 flex flex-col bg-black/50 bg-cover bg-center overflow-hidden min-h-screen" style={{ backgroundImage: 'url("/bg.jpg")' }}>
+    <div className="fixed inset-0 z-50 flex flex-col bg-black/50 bg-cover bg-center overflow-hidden min-h-screen" style={{ backgroundImage: 'url("/bg.webp")' }}>
       {/* Animasi "The wedding of" */}
       <motion.p
         className={`${playfairDisplay.className} text-center text-m font-semibold text-[#4B5563] mt-32 z-60`}
@@ -53,7 +53,7 @@ export default function Cover({ onOpen }: CoverProps) {
 
       {/* Gambar bunga di berbagai posisi */}
       <motion.img
-        src="/img/ltflower.png"
+        src="/img/ltflower.webp"
         alt="Bunga"
         className="absolute top-0 left-[-20] w-[200px] h-[200px] object-cover z-30"
         initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -61,7 +61,7 @@ export default function Cover({ onOpen }: CoverProps) {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       />
       <motion.img
-        src="/img/rtflower.png"
+        src="/img/rtflower.webp"
         alt="Bunga"
         className="absolute top-0 right-[-20] w-[200px] h-[200px] object-cover z-30"
         initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -69,7 +69,7 @@ export default function Cover({ onOpen }: CoverProps) {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       />
       <motion.img
-        src="/img/lmflower.png"
+        src="/img/lmflower.webp"
         alt="Bunga"
         className="absolute top-[30vh] left-0 w-[200px] h-[400px]"
         initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -77,7 +77,7 @@ export default function Cover({ onOpen }: CoverProps) {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       />
       <motion.img
-        src="/img/rmflower.png"
+        src="/img/rmflower.webp"
         alt="Bunga"
         className="absolute top-[30vh] right-0 w-[200px] h-[400px]"
         initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -85,7 +85,7 @@ export default function Cover({ onOpen }: CoverProps) {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       />
       <motion.img
-        src="/img/blflower.png"
+        src="/img/blflower.webp"
         alt="Bunga"
         className="absolute bottom-0 left-0 w-[200px] h-[200px] object-cover z-60"
         initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -93,7 +93,7 @@ export default function Cover({ onOpen }: CoverProps) {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       />
       <motion.img
-        src="/img/brflower.png"
+        src="/img/brflower.webp"
         alt="Bunga"
         className="absolute bottom-0 right-0 w-[200px] h-[200px] object-cover z-60"
         initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan

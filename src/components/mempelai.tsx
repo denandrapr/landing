@@ -14,10 +14,10 @@ const greatVibes = Great_Vibes({
 
 const Mempelai: React.FC = () => {
     return (
-        <section className="flex flex-col items-center justify-center pt-16 pb-40 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/bg.jpg")' }}>
+        <section className="flex flex-col items-center justify-center pt-16 pb-40 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/bg.webp")' }}>
         {/* Ornamen */}
         <motion.img
-          src="/img/lmflower.png"
+          src="/img/lmflower.webp"
           alt="Bunga"
           className="absolute top-[5vh] left-[-50] w-[200px] h-[400px]"
           initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -25,7 +25,7 @@ const Mempelai: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         />
         <motion.img
-          src="/img/rmflower.png"
+          src="/img/rmflower.webp"
           alt="Bunga"
           className="absolute top-[5vh] right-[-50] w-[200px] h-[400px]"
           initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -33,7 +33,7 @@ const Mempelai: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         />
         <motion.img
-          src="/img/lmflower.png"
+          src="/img/lmflower.webp"
           alt="Bunga"
           className="absolute top-[30vh] left-[-30] w-[200px] h-[450px]"
           initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -41,7 +41,7 @@ const Mempelai: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         />
         <motion.img
-          src="/img/rmflower.png"
+          src="/img/rmflower.webp"
           alt="Bunga"
           className="absolute top-[30vh] right-[-30] w-[200px] h-[450px]"
           initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -49,7 +49,7 @@ const Mempelai: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         />
         <motion.img
-          src="/img/blflower.png"
+          src="/img/blflower.webp"
           alt="Bunga"
           className="absolute bottom-0 left-0 w-[250px] h-[300px] object-cover z-60"
           initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -57,7 +57,7 @@ const Mempelai: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         />
         <motion.img
-          src="/img/brflower.png"
+          src="/img/brflower.webp"
           alt="Bunga"
           className="absolute bottom-0 right-0 w-[250px] h-[300px] object-cover z-60"
           initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -66,7 +66,7 @@ const Mempelai: React.FC = () => {
         />
 
         <motion.img
-          src="/img/gunung.png"
+          src="/img/gunung.webp"
           alt="Bunga"
           className="absolute bottom-0 right-15 w-[110px] h-[150px] object-cover z-40"
           initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -75,7 +75,7 @@ const Mempelai: React.FC = () => {
         />
 
         <motion.img
-          src="/img/gunung.png"
+          src="/img/gunung.webp"
           alt="Bunga"
           className="absolute bottom-0 left-15 w-[110px] h-[150px] object-cover z-40"
           initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -107,7 +107,7 @@ const Mempelai: React.FC = () => {
           <div className="relative text-center">
             {/* Gambar mempelai */}
             <motion.img
-              src="/bellaa.png"
+              src="/bellaa.webp"
               alt="Mempelai Pria"
               className="w-42 h-42 rounded-full object-cover relative mx-auto"
               initial={{ opacity: 0, y: 30 }}
@@ -135,7 +135,7 @@ const Mempelai: React.FC = () => {
           <div className="text-center">
             {/* Gambar mempelai */}
             <motion.img
-              src="/adraa.png"
+              src="/adraa.webp"
               alt="Mempelai Wanita"
               className="w-42 h-42 rounded-full object-cover relative mx-auto"
               initial={{ opacity: 0, y: 30 }}

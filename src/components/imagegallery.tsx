@@ -32,10 +32,10 @@ export default function ImageGallery() {
     const [selectedImage, setSelectedImage] = useState(images[0]);
 
     return (
-        <section className="flex flex-col items-center justify-center pt-16 pb-24 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/bg.jpg")' }}>
+        <section className="flex flex-col items-center justify-center pt-16 pb-24 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/bg.webp")' }}>
             {/* Ornamen */}
             <motion.img
-                src="/img/lmflower.png"
+                src="/img/lmflower.webp"
                 alt="Bunga"
                 className="absolute top-[5vh] left-[-50] w-[200px] h-[400px]"
                 initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -43,7 +43,7 @@ export default function ImageGallery() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             />
             <motion.img
-                src="/img/rmflower.png"
+                src="/img/rmflower.webp"
                 alt="Bunga"
                 className="absolute top-[5vh] right-[-50] w-[200px] h-[400px]"
                 initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -51,7 +51,7 @@ export default function ImageGallery() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             />
             <motion.img
-                src="/img/lmflower.png"
+                src="/img/lmflower.webp"
                 alt="Bunga"
                 className="absolute top-[30vh] left-[-30] w-[200px] h-[450px]"
                 initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -59,7 +59,7 @@ export default function ImageGallery() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             />
             <motion.img
-                src="/img/rmflower.png"
+                src="/img/rmflower.webp"
                 alt="Bunga"
                 className="absolute top-[30vh] right-[-30] w-[200px] h-[450px]"
                 initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
@@ -67,7 +67,7 @@ export default function ImageGallery() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             />
             <motion.img
-                src="/img/blflower.png"
+                src="/img/blflower.webp"
                 alt="Bunga"
                 className="absolute bottom-0 left-0 w-[250px] h-[300px] object-cover z-60"
                 initial={{ opacity: 0, x: -50 }} // mulai dari atas sedikit & transparan
@@ -75,7 +75,7 @@ export default function ImageGallery() {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             />
             <motion.img
-                src="/img/brflower.png"
+                src="/img/brflower.webp"
                 alt="Bunga"
                 className="absolute bottom-0 right-0 w-[250px] h-[300px] object-cover z-60"
                 initial={{ opacity: 0, x: 50 }} // mulai dari atas sedikit & transparan
