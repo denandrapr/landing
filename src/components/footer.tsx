@@ -70,13 +70,13 @@ const Footer: React.FC = () => {
         {/* Ucapan Terima Kasih */}
         <div className="text-center space-y-6">
           <p className={`${playfairDisplay.className} text-sm leading-relaxed text-gray-100 max-w-2xl mx-auto`}>
-            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Saudara/Saudari berkenan hadir untuk memberikan do'a restu.
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Saudara/Saudari berkenan hadir untuk memberikan doa restu.
           </p>
           <p className={`${playfairDisplay.className} text-sm leading-relaxed text-gray-100`}>
-            Atas kehadiran dan do'a restunya kami ucapkan terimakasih.
+            Atas kehadiran dan doa restunya kami ucapkan terima kasih.
           </p>
-          <p className={`${playfairDisplay.className} text-sm font-semibold text-white`}>
-            Kami Yang Berbahagia
+          <p className={`${playfairDisplay.className} text-sm text-gray-100`}>
+            Kami yang Berbahagia
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
       {/* Copyright */}
       <div className="mt-8 space-y-1 text-center z-90">
         <div className={`${playfairDisplay.className} text-xs text-gray-300`}>
-          &copy; 2025 Denandra & Bella. All rights reserved.
+          &copy; 2025 Bella & Denandra. All rights reserved.
         </div>
         <div className={`${playfairDisplay.className} text-xs text-gray-300`}>
           Dibikin dengan ❤️ pake Next.js, biar kece!

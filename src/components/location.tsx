@@ -127,7 +127,7 @@ const Location: React.FC = () => {
                     transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
                 >
                     <p className={`${playfairDisplay.className} text-lg font-semibold`}>
-                        Bertempat di:
+                        Bertempat di :
                     </p>
                     <p className={`${playfairDisplay.className} text-sm mt-2 leading-relaxed`}>
                         Gedung Graha Wisata Jawa Timur <br />
