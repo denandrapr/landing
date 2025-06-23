@@ -128,17 +128,19 @@ export default function ImageGallery() {
             </div>
 
             {/* Video YouTube */}
-            <div className="w-full max-w-md mt-8 z-90">
+            <div className="w-full max-w-md mt-8 z-90 relative">
                 <iframe
                     width="100%"
-                    height="200"
-                    src="https://www.youtube.com/embed/IuQz_b-LCmc"
+                    height="250"
+                    src="https://www.youtube.com/embed/i7hD84j2FdU?modestbranding=1&controls=0&rel=0&fs=0&cc_load_policy=0&iv_load_policy=3"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="rounded-lg"
-                ></iframe>
+                />
+                {/* Overlay to hide title area */}
+                <div className="absolute top-0 left-0 right-0 h-12 bg-transparent pointer-events-none z-10"></div>
             </div>
         </section>
     );
