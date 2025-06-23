@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Cover from '../components/cover';
 import BackgroundMusic from '../components/backgroundmusic';
 import WeddingPage from '@/components/weddingpage';
+import CoverV2 from '@/components/coverv2';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function Home() {
       <BackgroundMusic isPlaying={isOpen} /> 
 
       {/* Ini Cover */}
-      {!isOpen && <Cover onOpen={() => setIsOpen(true)} />}
+      {!isOpen && <CoverV2 onOpen={() => setIsOpen(true)} />}
 
       {/* Ini Konten Setelah Buka */}
       <div className={`transition-all duration-1000 ${isOpen ? 'translate-y-0' : '-translate-y-full'} overflow-auto h-screen`}>
