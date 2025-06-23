@@ -34,3 +34,7 @@ html, body {
 button {
   font-size: 0.8rem; /* ini bakal override Tailwind */
 }
+
+.text-xxs {
+  font-size: 0.6rem; /* 8px */
+}
