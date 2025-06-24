@@ -38,3 +38,7 @@ button {
 .text-xxs {
   font-size: 0.6rem; /* 8px */
 }
+
+.text-25xl {
+  font-size: 1.8rem; /* 8px */
+}

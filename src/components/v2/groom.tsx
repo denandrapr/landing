@@ -33,7 +33,7 @@ const Groom: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <p className={`${playfairDisplay.className} text-white text-xs font-normal`}>
-            Mempelai Pria
+            MEMPELAI PRIA
           </p>
         </motion.div>
 
@@ -44,8 +44,8 @@ const Groom: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
         >
-          <p className={`${playfairDisplay.className} text-white text-3xl md:text-5xl leading-tight`}>
-            DENANDRA PRASETYA <br /> LAKSMA PUTRA S.Kom
+          <p className={`${playfairDisplay.className} text-white text-25xl md:text-5xl leading-tight`}>
+            DENANDRA PRASETYA<br /> LAKSMA PUTRA S.Kom
           </p>
         </motion.div>
 
@@ -72,8 +72,8 @@ const Groom: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
         >
-          <p className={`${playfairDisplay.className} text-white text-sm`}>
-            Bapak Riski Mahendra S.E <br/>dan<br/> Ibu C. Yogi Laksmi Devi
+          <p className={`${playfairDisplay.className} text-white text-xs`}>
+            Bapak Riski Mahendra S.E dan Ibu C. Yogi Laksmi Devi
           </p>
         </motion.div>
       </div>
