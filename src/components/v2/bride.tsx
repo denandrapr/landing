@@ -59,7 +59,7 @@ const Bride: React.FC = () => {
           <div className="flex items-center w-full">
             <div className="flex-grow h-px bg-white"></div>
             <span className={`${playfairDisplay.className} text-white text-xs mx-2 whitespace-nowrap`}>
-              Anak dari
+              Putri dari
             </span>
             <div className="flex-grow h-px bg-white"></div>
           </div>
