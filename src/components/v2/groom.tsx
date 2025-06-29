@@ -33,7 +33,7 @@ const Groom: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <p className={`${playfairDisplay.className} text-white text-xs font-normal`}>
-            MEMPELAI PRIA
+            THE GROOM
           </p>
         </motion.div>
 
@@ -59,7 +59,7 @@ const Groom: React.FC = () => {
           <div className="flex items-center w-full">
             <div className="flex-grow h-px bg-white"></div>
             <span className={`${playfairDisplay.className} text-white text-xs mx-2 whitespace-nowrap`}>
-              Putra Dari
+              The Son of
             </span>
             <div className="flex-grow h-px bg-white"></div>
           </div>

@@ -33,7 +33,7 @@ const Bride: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <p className={`${playfairDisplay.className} text-white text-xs font-normal`}>
-            MEMPELAI WANITA
+            THE BRIDE
           </p>
         </motion.div>
 
@@ -59,7 +59,7 @@ const Bride: React.FC = () => {
           <div className="flex items-center w-full">
             <div className="flex-grow h-px bg-white"></div>
             <span className={`${playfairDisplay.className} text-white text-xs mx-2 whitespace-nowrap`}>
-              Putri Dari
+              The Daughter of
             </span>
             <div className="flex-grow h-px bg-white"></div>
           </div>

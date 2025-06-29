@@ -6,7 +6,7 @@ import Footer from "./footer";
 import supabase from "@/config/supabaseclient";
 import Rsvp from "./rsvp";
 import Gift from "./gift";
-import Surah from "./v2/surah";
+import Hero from "./v2/hero";
 import Bride from "./v2/bride";
 import Groom from "./v2/groom";
 
@@ -16,7 +16,7 @@ export default function WeddingPage() {
     <div className="bg-[#e6f5ec]">
       {/* Section 1: Mempelai */}
       {/* <Mempelai /> */}
-      <Surah />
+      <Hero />
 
       {/* Section 2: Acara */}
       {/* <CountingSection /> */}
