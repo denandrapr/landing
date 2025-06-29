@@ -70,7 +70,7 @@ const LocationV2: React.FC = () => {
                             AKAD
                         </h3>
                         <p className={`${playfairDisplay.className} text-white text-base font-normal`}>
-                            AT 09.00 - 10.00
+                            AT 09.00 - 10.00 WIB
                         </p>
                     </motion.div>
 
@@ -85,7 +85,7 @@ const LocationV2: React.FC = () => {
                             RESEPSI
                         </h3>
                         <p className={`${playfairDisplay.className} text-white text-base font-normal`}>
-                            AT 12.30 - 14.00
+                            AT 12.30 - 14.00 WIB
                         </p>
                     </motion.div>
 
@@ -129,10 +129,8 @@ const LocationV2: React.FC = () => {
                 </div>
             </div>
 
-
-
             <motion.div
-                className="w-full mt-8 z-60"
+                className="w-full z-60"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
