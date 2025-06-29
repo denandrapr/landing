@@ -32,7 +32,7 @@ export default function ImageGalleryV2() {
     const [selectedImage, setSelectedImage] = useState(images[0]);
 
     return (
-        <section className="flex flex-col items-center justify-center pt-16 pb-24 px-6 overflow-hidden relative bg-black">
+        <section className="flex flex-col items-center justify-center pt-16 pb-24 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/sepatu.webp")'}}>
             <motion.p
                 className={`${playfairDisplay.className} text-center text-4xl mb-4 text-white]`}
                 initial={{ opacity: 0, y: -50 }}

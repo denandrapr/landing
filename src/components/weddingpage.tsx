@@ -12,17 +12,17 @@ import Groom from "./v2/groom";
 import LocationV2 from "./v2/locationv2";
 import { motion } from "framer-motion";
 import ImageGalleryV2 from "./v2/imagegalleryv2";
+import CountingSectionV2 from "./v2/countingv2";
 
 export default function WeddingPage() {
   console.log("Supabase Client:", supabase);
   return (
-    <div className="bg-[#e6f5ec]">
+    <div className="bg-black">
       {/* Section 1: Mempelai */}
       {/* <Mempelai /> */}
       <Hero />
 
       {/* Section 2: Acara */}
-      {/* <CountingSection /> */}
       <Bride />
       <Groom />
 
@@ -46,6 +46,8 @@ export default function WeddingPage() {
           loading="lazy"
         ></iframe>
       </motion.div>
+      {/* Section 3: Counting */}
+      <CountingSectionV2 />
 
       {/* Section 4: Gallery */}
       <ImageGalleryV2 />

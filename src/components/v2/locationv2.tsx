@@ -123,7 +123,7 @@ const LocationV2: React.FC = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <span className={`${playfairDisplay.className} font-normal text-black`}>
-                            Buka Google Maps
+                            Open Google Maps
                         </span>
                     </motion.button>
                 </div>
