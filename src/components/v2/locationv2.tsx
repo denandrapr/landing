@@ -55,8 +55,8 @@ const LocationV2: React.FC = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
                     >
-                        SATURDAY,<br />
-                        20th September 2025
+                        SABTU,<br />
+                        20 September 2025
                     </motion.p>
 
                     {/* Akad */}
@@ -70,7 +70,7 @@ const LocationV2: React.FC = () => {
                             AKAD
                         </h3>
                         <p className={`${playfairDisplay.className} text-white text-base font-normal`}>
-                            AT 09.00 - 10.00 WIB
+                            09.00 - 10.00 WIB
                         </p>
                     </motion.div>
 
@@ -85,7 +85,7 @@ const LocationV2: React.FC = () => {
                             RESEPSI
                         </h3>
                         <p className={`${playfairDisplay.className} text-white text-base font-normal`}>
-                            AT 12.30 - 14.00 WIB
+                            12.30 - 14.00 WIB
                         </p>
                     </motion.div>
 
@@ -123,7 +123,7 @@ const LocationV2: React.FC = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <span className={`${playfairDisplay.className} font-normal text-black`}>
-                            Open Google Maps
+                            Buka Google Maps
                         </span>
                     </motion.button>
                 </div>

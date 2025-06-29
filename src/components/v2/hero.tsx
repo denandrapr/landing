@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
           >
-            WE INVITE YOU TO CELEBRATE
+            KAMI MENGUNDANG ANDA UNTUK MERAYAKAN
           </motion.p>
           
           {/* Names */}
@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
           >
-            SATURDAY, 20th SEPTEMBER 2025
+            SABTU, 20 SEPTEMBER 2025
           </motion.p>
           
           {/* Scroll Down Icon */}

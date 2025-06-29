@@ -99,7 +99,7 @@ export default function CoverV2({ onOpen }: CoverProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.9 }}
             >
-              Dear, {guestName}
+              Kepada Yth, {guestName}
             </motion.p>
             <motion.p
               className={`${inter.className} text-white text-xxs text-center max-w-xs`}
@@ -107,7 +107,7 @@ export default function CoverV2({ onOpen }: CoverProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 1.3 }}
             >
-              We apologize if there is any misspelling<br /> of name or title
+              Mohon maaf apabila terdapat kesalahan<br/> penulisan nama atau gelar
             </motion.p>
 
             {/* Animasi tombol "Buka Undangan" */}
@@ -148,7 +148,7 @@ export default function CoverV2({ onOpen }: CoverProps) {
               }}
             >
               <FiBookOpen className="text-m" />
-              OPEN INVITATION
+              BUKA UNDANGAN
             </motion.button>
           </div>
         </div>

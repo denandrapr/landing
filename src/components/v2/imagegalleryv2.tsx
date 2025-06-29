@@ -34,12 +34,12 @@ export default function ImageGalleryV2() {
     return (
         <section className="flex flex-col items-center justify-center pt-16 pb-24 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/sepatu.webp")'}}>
             <motion.p
-                className={`${playfairDisplay.className} text-center text-4xl mb-4 text-white]`}
+                className={`${playfairDisplay.className} text-center text-3xl mb-4 text-white]`}
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-                Our Love Gallery
+                Galeri Cinta Kita
             </motion.p>
 
             <motion.p
@@ -48,7 +48,7 @@ export default function ImageGalleryV2() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-                Not just photos, these are memories of our story we’ll never forget 💫
+                Setiap foto menyimpan cerita yang tak akan pernah kami lupakan 💫
             </motion.p>
 
             {/* Video YouTube */}

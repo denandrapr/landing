@@ -33,7 +33,7 @@ const Groom: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <p className={`${playfairDisplay.className} text-white text-xs font-normal`}>
-            THE GROOM
+            PENGANTIN PRIA
           </p>
         </motion.div>
 
@@ -59,7 +59,7 @@ const Groom: React.FC = () => {
           <div className="flex items-center w-full">
             <div className="flex-grow h-px bg-white"></div>
             <span className={`${playfairDisplay.className} text-white text-xs mx-2 whitespace-nowrap`}>
-              The Son of
+              Anak Dari
             </span>
             <div className="flex-grow h-px bg-white"></div>
           </div>
@@ -73,7 +73,7 @@ const Groom: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
         >
           <p className={`${playfairDisplay.className} text-white text-xs`}>
-            Bapak Riski Mahendra, S.E. dan Ibu C. Yogi Laksmi Devi
+            Bapak Rizki Mahendra dan Ibu C. Yogi Laksmi Devi
           </p>
         </motion.div>
       </div>

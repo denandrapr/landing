@@ -30,12 +30,12 @@ const CountingSectionV2: React.FC = () => {
         >
             {/* Tanggal */}
             <motion.p
-                className={`${playfairDisplay.className} text-center text-4xl font-base text-white`}
+                className={`${playfairDisplay.className} text-center text-3xl font-base text-white`}
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-                Counting The Days
+                Menanti Hari Bahagia
             </motion.p>
             <CountdownV2 targetDate="2025-09-20T00:00:00" />
             <motion.button
@@ -47,7 +47,7 @@ const CountingSectionV2: React.FC = () => {
             >
                 <FiCalendar className="text-m" />
                 <span className={`${playfairDisplay.className} font-normal text-black`}>
-                    Add to Calendar
+                    Tambahkan ke kelender
                 </span>
             </motion.button>
         </section>
