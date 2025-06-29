@@ -9,6 +9,7 @@ import Gift from "./gift";
 import Hero from "./v2/hero";
 import Bride from "./v2/bride";
 import Groom from "./v2/groom";
+import LocationV2 from "./v2/locationv2";
 
 export default function WeddingPage() {
   console.log("Supabase Client:", supabase);
@@ -24,7 +25,8 @@ export default function WeddingPage() {
       <Groom />
 
       {/* Section 3: Location */}
-      <Location />
+      {/* <Location /> */}
+      <LocationV2 />
 
       {/* Section 4: Gallery */}
       <ImageGallery />
