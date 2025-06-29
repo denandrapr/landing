@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Cover from '../components/cover';
 import BackgroundMusic from '../components/backgroundmusic';
 import WeddingPage from '@/components/weddingpage';
-import CoverV2 from '@/components/coverv2';
+import CoverV2 from '@/components/v2/coverv2';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);

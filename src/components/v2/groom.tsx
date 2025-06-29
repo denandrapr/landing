@@ -45,7 +45,7 @@ const Groom: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
         >
           <p className={`${playfairDisplay.className} text-white text-25xl md:text-5xl leading-tight`}>
-            DENANDRA PRASETYA<br /> LAKSMA PUTRA S.Kom
+            DENANDRA PRASETYA<br /> LAKSMA PUTRA
           </p>
         </motion.div>
 
@@ -73,7 +73,7 @@ const Groom: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
         >
           <p className={`${playfairDisplay.className} text-white text-xs`}>
-            Bapak Riski Mahendra S.E dan Ibu C. Yogi Laksmi Devi
+            Bapak Riski Mahendra, S.E. dan Ibu C. Yogi Laksmi Devi
           </p>
         </motion.div>
       </div>

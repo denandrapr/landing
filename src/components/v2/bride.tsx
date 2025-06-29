@@ -45,7 +45,7 @@ const Bride: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
         >
           <p className={`${playfairDisplay.className} text-white text-3xl md:text-5xl leading-tight`}>
-            BELLA RAMADHANTY <br /> MARUF S.Kom
+            BELLA RAMADHANTY <br /> MARUF
           </p>
         </motion.div>
 
@@ -73,7 +73,7 @@ const Bride: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
         >
           <p className={`${playfairDisplay.className} text-white text-xs`}>
-            Bapak Ali Maruf S.Sos, M.M dan Ibu Susiati Sumardi S.Sos
+            Bapak Ali Maruf, S.Sos., M.M. dan Ibu Susiati Sumardi, S.Sos.
           </p>
         </motion.div>
       </div>

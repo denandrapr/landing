@@ -2,7 +2,8 @@
 import { Inter, Playfair_Display } from 'next/font/google';
 import { FiBookOpen } from 'react-icons/fi';
 import { motion } from 'framer-motion';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 interface CoverProps {
   onOpen: () => void;
@@ -20,6 +21,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export default function CoverV2({ onOpen }: CoverProps) {
+  const [guestName, setGuestName] = useState('Guest');
 
   useEffect(() => {
     // Disable scroll when component mounts
@@ -31,6 +33,16 @@ export default function CoverV2({ onOpen }: CoverProps) {
       document.body.style.overflow = '';
       document.documentElement.style.overflow = '';
     };
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get('to');
+      if (name) {
+        setGuestName(decodeURIComponent(name.replace(/\+/g, ' ')));
+      }
+    }
   }, []);
 
   return (
@@ -63,7 +75,7 @@ export default function CoverV2({ onOpen }: CoverProps) {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
         >
-          Denandra - Bella
+          Bella - Denandra
         </motion.h1>
 
         {/* Animasi tanggal */}
@@ -87,7 +99,7 @@ export default function CoverV2({ onOpen }: CoverProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.9 }}
             >
-              Dear, Denandra
+              Kepada Yth, {guestName}
             </motion.p>
             <motion.p
               className={`${inter.className} text-white text-xxs text-center max-w-xs`}
@@ -95,7 +107,7 @@ export default function CoverV2({ onOpen }: CoverProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 1.3 }}
             >
-              We apologize if there is any misspelling<br /> of name or title
+              Kami mohon maaf jika ada kesalahan penulisan<br /> nama atau gelar
             </motion.p>
 
             {/* Animasi tombol "Buka Undangan" */}
@@ -136,7 +148,7 @@ export default function CoverV2({ onOpen }: CoverProps) {
               }}
             >
               <FiBookOpen className="text-m" />
-              OPEN INVITATION
+              BUKA UNDANGAN
             </motion.button>
           </div>
         </div>

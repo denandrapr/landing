@@ -14,32 +14,48 @@ const greatVibes = Great_Vibes({
 
 const Surah: React.FC = () => {
   return (
-    <section 
-      className="flex flex-col min-h-screen pt-16 pb-40 overflow-hidden relative" 
-      style={{ 
-        backgroundImage: 'url("/covers.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
-      <motion.p
-        className={`${playfairDisplay.className} text-left text-3xl font-reguler mt-4 px-8 text-white`}
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
-      >
-        QS Ar-Rum: 21
-      </motion.p>
+    <section className="flex flex-col min-h-screen pt-16 pb-40 overflow-hidden relative">
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover"
+          poster="/covers.jpg"
+        >
+          <source src="/video/preview.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-      <motion.p
-        className={`${playfairDisplay.className} text-left text-xs font-reguler mt-4 px-8 text-white`}
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
-      >
-        “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.”
-      </motion.p>
+      {/* Black transparent overlay */}
+      <div
+        className="absolute inset-0 z-10"
+        style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}
+      ></div>
+
+      {/* Content */}
+      <div className="relative z-20">
+        <motion.p
+          className={`${playfairDisplay.className} text-left text-3xl font-reguler mt-4 px-8 text-white`}
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
+          QS Ar-Rum: 21
+        </motion.p>
+        <motion.p
+          className={`${playfairDisplay.className} text-left text-xs font-reguler mt-4 px-8 text-white`}
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
+          "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir."
+        </motion.p>
+      </div>
     </section>
   );
 };
