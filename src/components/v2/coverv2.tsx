@@ -53,7 +53,7 @@ export default function CoverV2({ onOpen }: CoverProps) {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: 'url("/gallery/photo10.webp")' }}
+        style={{ backgroundImage: 'url("/gallery/bg.webp")' }}
       ></div>
 
       {/* Content container (relative to position elements above overlay) */}

@@ -17,7 +17,7 @@ const Groom: React.FC = () => {
     <section
       className="flex flex-col min-h-screen relative"
       style={{
-        backgroundImage: 'url("/v2/adra.jpg")',
+        backgroundImage: 'url("/v2/adra2.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

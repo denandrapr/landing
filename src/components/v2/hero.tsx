@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
           >
-            KAMI MENGUNDANG ANDA UNTUK MERAYAKAN
+            WE INVITE YOU TO CELEBRATE
           </motion.p>
           
           {/* Names */}

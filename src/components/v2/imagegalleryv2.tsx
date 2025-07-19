@@ -32,9 +32,17 @@ export default function ImageGalleryV2() {
     const [selectedImage, setSelectedImage] = useState(images[0]);
 
     return (
-        <section className="flex flex-col items-center justify-center pt-16 pb-24 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/sepatu.webp")'}}>
+        <section
+            className="flex flex-col min-h-screen items-center justify-center relative pt-16 pb-24 px-6 o"
+            style={{
+                backgroundImage: 'url("/sepatu.webp")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+            }}
+        >
             <motion.p
-                className={`${playfairDisplay.className} text-center text-3xl mb-4 text-white]`}
+                className={`${playfairDisplay.className} text-center text-3xl mb-4 text-white z-20]`}
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -43,7 +51,7 @@ export default function ImageGalleryV2() {
             </motion.p>
 
             <motion.p
-                className={`${playfairDisplay.className} text-center text-xs mb-8 font-semibold text-white px-12`}
+                className={`${playfairDisplay.className} text-center text-xs mb-8 font-semibold text-white px-12 z-20`}
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}

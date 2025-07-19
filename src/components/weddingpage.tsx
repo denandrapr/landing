@@ -13,6 +13,8 @@ import LocationV2 from "./v2/locationv2";
 import { motion } from "framer-motion";
 import ImageGalleryV2 from "./v2/imagegalleryv2";
 import CountingSectionV2 from "./v2/countingv2";
+import FooterV2 from "./v2/footerv2";
+import GiftV2 from "./v2/giftv2";
 
 export default function WeddingPage() {
   console.log("Supabase Client:", supabase);
@@ -56,10 +58,11 @@ export default function WeddingPage() {
       <Rsvp />
 
       {/* Section 5: Rsvp */}
-      <Gift />
+      <GiftV2 />
 
       {/* Section 5: Footer */}
-      <Footer />
+      {/* <Footer /> */}
+      <FooterV2 />
     </div>
   );
 }

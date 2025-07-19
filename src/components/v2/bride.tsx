@@ -17,7 +17,7 @@ const Bride: React.FC = () => {
     <section
       className="flex flex-col min-h-screen relative"
       style={{
-        backgroundImage: 'url("/v2/bella.jpg")',
+        backgroundImage: 'url("/v2/bella2.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
