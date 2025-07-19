@@ -40,7 +40,7 @@ const CountingSectionV2: React.FC = () => {
             <CountdownV2 targetDate="2025-09-20T00:00:00" />
             <motion.button
                 onClick={() => { addToCalendar() }}
-                className={`${playfairDisplay.className} flex items-center gap-2 bg-white text-black font-bold py-3 px-4 mt-4 text-base rounded-full`}
+                className={`${playfairDisplay.className} flex items-center gap-2 bg-white text-black font-bold py-3 px-4 mt-4 text-base`}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.9 }}

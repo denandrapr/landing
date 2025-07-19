@@ -1,17 +1,11 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { Great_Vibes, Playfair_Display } from 'next/font/google';
-import { FiMap } from 'react-icons/fi';
 import { useQRCode } from 'next-qrcode';
 
 const playfairDisplay = Playfair_Display({
     subsets: ['latin'],
     weight: ['400', '700'],
-});
-
-const greatVibes = Great_Vibes({
-    subsets: ['latin'],
-    weight: ['400'],
 });
 
 const LocationV2: React.FC = () => {
@@ -115,7 +109,7 @@ const LocationV2: React.FC = () => {
                     {/* Google Maps Button */}
                     <motion.button
                         onClick={openGoogleMaps}
-                        className="flex items-center justify-center gap-2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-4 py-2 rounded-full border border-white border-opacity-50 transition-all duration-300 backdrop-blur-sm"
+                        className="flex items-center justify-center gap-2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-4 py-2 border border-white border-opacity-50 transition-all duration-300 backdrop-blur-sm"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: 'easeOut', delay: 1.6 }}

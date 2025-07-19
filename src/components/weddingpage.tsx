@@ -15,6 +15,7 @@ import ImageGalleryV2 from "./v2/imagegalleryv2";
 import CountingSectionV2 from "./v2/countingv2";
 import FooterV2 from "./v2/footerv2";
 import GiftV2 from "./v2/giftv2";
+import RsvpV2 from "./v2/rsvpv2";
 
 export default function WeddingPage() {
   console.log("Supabase Client:", supabase);
@@ -42,7 +43,7 @@ export default function WeddingPage() {
           title="Wedding Location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0706208593206!2d112.7348571!3d-7.345966899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb4b0d8c2dff%3A0xb0e6098509d44856!2sGedung%20Graha%20Wisata!5e0!3m2!1sen!2sid!4v1745086170180!5m2!1sen!2sid"
           width="100%"
-          height="225"
+          height="300"
           style={{ border: 0 }}
           allowFullScreen={false}
           loading="lazy"
@@ -55,10 +56,10 @@ export default function WeddingPage() {
       <ImageGalleryV2 />
 
       {/* Section 5: Rsvp */}
-      <Rsvp />
+      <RsvpV2 />
 
       {/* Section 5: Rsvp */}
-      <GiftV2 />
+      {/* <GiftV2 /> */}
 
       {/* Section 5: Footer */}
       {/* <Footer /> */}
