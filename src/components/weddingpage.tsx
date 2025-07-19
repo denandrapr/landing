@@ -16,6 +16,7 @@ import CountingSectionV2 from "./v2/countingv2";
 import FooterV2 from "./v2/footerv2";
 import GiftV2 from "./v2/giftv2";
 import RsvpV2 from "./v2/rsvpv2";
+import ListUcapan from "./v2/listucapan";
 
 export default function WeddingPage() {
   console.log("Supabase Client:", supabase);
@@ -57,9 +58,10 @@ export default function WeddingPage() {
 
       {/* Section 5: Rsvp */}
       <RsvpV2 />
+      <ListUcapan />
 
       {/* Section 5: Rsvp */}
-      {/* <GiftV2 /> */}
+      <GiftV2 />
 
       {/* Section 5: Footer */}
       {/* <Footer /> */}

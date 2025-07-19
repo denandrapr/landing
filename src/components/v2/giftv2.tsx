@@ -33,59 +33,48 @@ const copyToClipboard = (text: string) => {
 
 export default function GiftV2() {
     return (
-        <section className="flex flex-col items-center justify-center pt-16 pb-16 px-6 overflow-hidden relative" style={{ backgroundImage: 'url("/bg.webp")' }}>
+        <section className="pt-16 pb-16 px-12 overflow-hidden relative bg-[#000]">
+            {/* Section informasi bank BCA*/}
+            <div className="relative inline-block">
+                <img
+                    src="/gift.png"
+                    alt="Kado"
+                    width={298}
+                    height={308}
+                />
+                {/* Black overlay */}
+                <div className="absolute inset-0 bg-black/50"></div>
+                {/* Centered text */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <h2 className={`${playfairDisplay.className} text-white text-xl font-normal text-center`}>
+                        Kado Pernikahan
+                    </h2>
+                </div>
+            </div>
+
             <motion.p
-                className={`${greatVibes.className} text-center text-3xl mb-12 font-semibold text-[#5C3B33]`}
+                className={`${playfairDisplay.className} text-left text-xs mt-8 font-normal text-[#FFF]`}
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-                Support Cinta Kami di Sini ✨
+                Bagi yang ingin memberikan tanda kasih untuk kami berdua, silakan transfer melalui rekening atau alamat berikut:
             </motion.p>
 
-            {/* Section informasi bank BCA*/}
-            <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-md mb-4 flex items-center gap-4 z-90">
-                <Image
-                    src="/bca.webp"
-                    alt="Logo Bank BCA"
-                    width={50}
-                    height={50}
-                />
-                <div className="flex-1">
-                    <p className="text-gray-800 font-semibold">BCA</p>
-                    <p className="text-gray-600 text-sm">a.n Bella Ramadhanty Maruf</p>
-                </div>
-                <button
-                    onClick={() => copyToClipboard("1234567890")}
-                    className="text-[#465F4B] hover:text-green-700 transition"
-                    type="button"
-                >
-                    <Copy size={20} />
-                </button>
-            </div>
 
-            {/* Section informasi bank BCA*/}
-            <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-md mb-8 flex items-center gap-4 z-90">
-                <Image
-                    src="/blu.webp"
-                    alt="Logo Bank BCA"
-                    width={50}
-                    height={50}
-                />
-                <div className="flex-1">
-                    <p className="text-gray-800 font-semibold">Blu by BCA Digital</p>
-                    <p className="text-gray-600 text-sm">a.n Bella Ramadhanty Maruf</p>
-                </div>
-                <button
-                    onClick={() => copyToClipboard("1234567890")}
-                    className="text-[#465F4B] hover:text-green-700 transition"
-                    type="button"
-                >
-                    <Copy size={20} />
-                </button>
-            </div>
-
-
+            {/* Google Maps Button */}
+            <motion.button
+                className="bg-white bg-opacity-20 mt-4 hover:bg-opacity-30 text-white px-4 py-2 border border-white border-opacity-50 transition-all duration-300 backdrop-blur-sm"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut', delay: 1.6 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+            >
+                <span className={`${playfairDisplay.className} font-normal text-black`}>
+                    BUKA
+                </span>
+            </motion.button>
         </section>
     );
 }
