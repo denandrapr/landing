@@ -14,7 +14,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Denandra & Bella",
-  description: "Denandra & Bella Wedding Invitation",
+  description: "The Wedding of Bella & Denandra,\nSabtu, 20 September 2025",
+  openGraph: {
+    title: "Denandra & Bella",
+    description: "The Wedding of Bella & Denandra,\nSabtu, 20 September 2025",
+    url: "https://nikah.andbella.site",
+    siteName: "Denandra & Bella",
+    images: [
+      {
+        url: "https://nikah.andbella.site/opengraph.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Undangan Pernikahan Bella & ..."
+      }
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
