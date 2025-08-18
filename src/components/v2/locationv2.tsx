@@ -64,7 +64,7 @@ const LocationV2: React.FC = () => {
                             AKAD
                         </h3>
                         <p className={`${playfairDisplay.className} text-white text-base font-normal`}>
-                            08.00 - 09.00 WIB
+                            07.00 - 08.00 WIB
                         </p>
                     </motion.div>
 

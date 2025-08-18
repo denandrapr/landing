@@ -73,7 +73,7 @@ const Bride: React.FC = () => {
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
         >
           <p className={`${playfairDisplay.className} text-white text-xs`}>
-            Bapak Ali Maruf, S.Sos., M.M. dan Ibu Susiati Sumardi, S.Sos.
+            Bapak Ali Maruf dan Ibu Susiati Sumardi
           </p>
         </motion.div>
       </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Great_Vibes, Playfair_Display } from 'next/font/google';
 import Image from 'next/image'
@@ -28,8 +28,25 @@ const images = [
     "/gallery/photo11.webp",
 ];
 
-export default function ImageGalleryV2() {
+export default function ImageGalleryV2({ onVideoPlay, onVideoPause }: { onVideoPlay: () => void, onVideoPause: () => void }) {
     const [selectedImage, setSelectedImage] = useState(images[0]);
+
+    useEffect(() => {
+        const tag = document.createElement("script");
+        tag.src = "https://www.youtube.com/iframe_api";
+        document.body.appendChild(tag);
+    
+        (window as any).onYouTubeIframeAPIReady = () => {
+          const player = new (window as any).YT.Player("yt-player", {
+            events: {
+              onStateChange: (event: any) => {
+                if (event.data === 1) onVideoPlay();   // Playing
+                if (event.data === 2) onVideoPause();  // Paused
+              },
+            },
+          });
+        };
+      }, []);
 
     return (
         <section
@@ -62,13 +79,15 @@ export default function ImageGalleryV2() {
             {/* Video YouTube */}
             <div className="w-full max-w-md mb-4 z-90 relative">
                 <iframe
+                    id="yt-player"
                     width="100%"
                     height="250"
-                    src="https://www.youtube.com/embed/i7hD84j2FdU?modestbranding=1&controls=0&rel=0&fs=0&cc_load_policy=0&iv_load_policy=3&showinfo=0"
+                    src="https://www.youtube.com/embed/i7hD84j2FdU?enablejsapi=1&modestbranding=1&controls=0&rel=0&fs=0"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
+                    className="rounded-lg"
                 />
                 {/* Overlay to hide title area */}
                 <div className="absolute top-0 left-0 right-0 h-12 bg-transparent pointer-events-none z-10"></div>
