@@ -73,7 +73,7 @@ export default function Home() {
         <ListUcapan />
 
         {/* Section 5: Rsvp */}
-        <GiftV2 />
+        {/* <GiftV2 /> */}
 
         {/* Section 5: Footer */}
         {/* <Footer /> */}

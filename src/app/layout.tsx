@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Denandra & Bella",
+  title: "Denandra & Bella - The Wedding",
   description: "The Wedding of Bella & Denandra,\nSabtu, 20 September 2025",
   openGraph: {
-    title: "Denandra & Bella",
+    title: "Denandra & Bella - The Wedding",
     description: "The Wedding of Bella & Denandra,\nSabtu, 20 September 2025",
     url: "https://nikah.andbella.site",
     siteName: "Denandra & Bella",

@@ -60,7 +60,7 @@ export default function GiftV2() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-                Bagi yang ingin memberikan tanda kasih untuk kami berdua, silakan transfer melalui rekening atau alamat berikut:
+                Apabila ingin berbagi tanda kasih untuk kami berdua, dengan senang hati dapat disampaikan melalui rekening berikut atau ke alamat yang tersedia.
             </motion.p>
 
 

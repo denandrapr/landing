@@ -25,18 +25,6 @@ const Groom: React.FC = () => {
     >
       {/* Container for bottom-aligned content */}
       <div className="mt-auto mb-16 px-8 w-full">
-        {/* Mempelai Wanita */}
-        <motion.div
-          className="w-full"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
-        >
-          <p className={`${playfairDisplay.className} text-white text-xs font-normal`}>
-            PENGANTIN PRIA
-          </p>
-        </motion.div>
-
         {/* Nama Mempelai */}
         <motion.div
           className="w-full mt-2"
