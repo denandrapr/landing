@@ -37,7 +37,7 @@ const FooterV2: React.FC = () => {
         {/* Ucapan Terima Kasih */}
         <div className="text-center space-y-6">
           <p className={`${playfairDisplay.className} text-sm leading-relaxed text-gray-100 max-w-2xl mx-auto`}>
-            Kebahagiaan ini akan semakin lengkap dengan kehadiran kalian. Terima kasih sudah mau berbagi momen spesial bersama kami!
+            Kebahagiaan ini akan semakin lengkap apabila anda berkenan hadir.<br/> Terima kasih telah berbagi momen spesial bersama kami!
           </p>
           <p className={`${playfairDisplay.className} text-sm leading-relaxed text-gray-100`}>
             With love,
